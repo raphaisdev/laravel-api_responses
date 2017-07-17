@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Uglymanfirst\\LaravelApiResponses": "src/"
+            "Uglymanfirst\\LaravelApiResponses\\": "src/"
         }
     }
 }
