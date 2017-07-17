@@ -1,0 +1,23 @@
+{
+    "name": "uglymanfirst/laravel-api_responses",
+    "description": "It's a Laravel format for an API responses.",
+    "type": "library",
+    "license": "GNU General Public License v3.0",
+    "authors": [
+        {
+            "name": "Raphael",
+            "email": "uglyman.rsg@gmail.com",
+            "homepage": "https://github.com/uglymanfirst",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uglymanfirst\\LaravelApiResponses": "src/"
+        }
+    }
+}
