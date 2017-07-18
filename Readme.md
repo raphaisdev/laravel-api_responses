@@ -9,9 +9,10 @@ Welcome to FTD Default API Response!
   - **The success method**
   - **The paginate method**
   - **The error method**
+  - **Advanced use for the success, paginate and error methods**
   - **The custom method**
   - **The defaultStatusCode method**
-  - The code list
+  - **The code list**
 
 
 ----------
@@ -206,6 +207,25 @@ This method will throw a header status code **400** and put your content inside 
   ]
 }
 ```
+
+
+**Advanced use for the success, paginate and error methods**
+----------------------
+
+If you need change the default status code of this methods, you can give a second parameter, like:
+
+```php
+  ...
+  return response()->success($data, 201);
+
+  ...
+  return response()->paginate($data, 206);
+
+  ...
+  return response()->error($data, 401);
+
+```
+
 
 **The custom method**
 ----------------------
