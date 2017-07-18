@@ -40,7 +40,7 @@ And call the provider inside your Laravel /config/app.php file:
 ```php
     'providers' => [
     ...
-      /*
+        /*
          * FTD Default API Response
          */
          FTD\DefaultAPIResponse\DefaultAPIResponseServiceProvider::class,
