@@ -3,7 +3,15 @@
 Welcome to FTD Default API Response!
 ===================
 
-[TOC]
+- About
+- Installation
+- How to use
+  - **The success method**
+  - **The paginate method**
+  - **The error method**
+  - **The custom method**
+  - **The defaultStatusCode method**
+  - The code list
 
 
 ----------
@@ -273,7 +281,7 @@ This method will throw a header status code and depends on which code, put defau
 }
 ```
 
-The code list
+**The code list**
 -------------
 
 |Code | Reference               |
