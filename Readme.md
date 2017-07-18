@@ -12,7 +12,7 @@ Welcome to FTD Default API Response!
   - **Advanced use for the success, paginate and error methods**
   - **The custom method**
   - **The defaultStatusCode method**
-  - **The code list**
+  - **The code list for defaultStatusCode method**
 
 
 ----------
@@ -301,7 +301,7 @@ This method will throw a header status code and depends on which code, put defau
 }
 ```
 
-**The code list**
+**The code list for defaultStatusCode method**
 -------------
 
 |Code | Reference               |
