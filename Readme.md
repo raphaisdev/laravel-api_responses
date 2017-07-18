@@ -35,7 +35,7 @@ Use composer do install our package:
 composer require ftd/default-api-response
 ```
 
-And call the provider inside your Laravel /config/app.php file:
+And call the provider inside your Laravel **/config/app.php** file:
 
 ```php
     'providers' => [
