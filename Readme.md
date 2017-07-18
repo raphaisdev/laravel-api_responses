@@ -74,9 +74,9 @@ This method will throw a header status code **200** and put your content inside 
 **Example:**
 ```php
   public function index()
-    {
-        return response()->success(App\User::all());
-    }
+  {
+      return response()->success(App\User::all());
+  }
 ```
 
 **Result:**
@@ -105,9 +105,9 @@ This method will throw a header status code **200** and put your content inside 
 **Example:**
 ```php
   public function show(User $user)
-    {
-        return response()->success($user);
-    }
+  {
+      return response()->success($user);
+  }
 ```
 
 **Result:**
@@ -130,10 +130,10 @@ This method will throw a header status code **200** and put your content inside 
 **Example:**
 ```php
   public function index()
-    {
-        $users = App\User::paginate(2);
-      return response()->paginate($users);
-    }
+  {
+      $users = App\User::paginate(2);
+    return response()->paginate($users);
+  }
 ```
 
 **Result:**
@@ -180,20 +180,20 @@ This method will throw a header status code **400** and put your content inside 
 ```php
   //User Custom Request
   public function rules()
-    {
-        return [
-            'name'      => 'required|string|max:255',
-            'username'  => 'required|unique:users|string|max:255',
-            'password'  => 'required|string|max:255'
-        ];
-    }
+  {
+    return [
+        'name'      => 'required|string|max:255',
+        'username'  => 'required|unique:users|string|max:255',
+        'password'  => 'required|string|max:255'
+    ];
+  }
 
   ...
 
   public function response(array $errors)
-    {
-        return response()->error($errors);
-    }
+  {
+    return response()->error($errors);
+  }
 ```
 
 **Result:**
@@ -221,8 +221,8 @@ This method is used for who need more control of the entire response:
 **Example:**
 ```php
   public function myCustomMethod()
-    {
-        return response()->custom(
+  {
+    return response()->custom(
       $content = [
             "Name" => "Rodolfo",
             "Age"=>13
@@ -231,7 +231,7 @@ This method is used for who need more control of the entire response:
       $headers = ["X-USER-INFO" => TRUE],
       $headerContentType = 'application/json'
     );
-    }
+  }
 ```
 
 **Result:**
@@ -267,9 +267,9 @@ This method will throw a header status code and depends on which code, put defau
 **Example:**
 ```php
   public function store()
-    {
-        return response()->defaultStatusCode(400);
-    }
+  {
+    return response()->defaultStatusCode(400);
+  }
 ```
 
 **Result:**
