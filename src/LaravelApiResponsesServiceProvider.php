@@ -1,5 +1,18 @@
 <?php
 
+/**
+ * Author: Raphael <raphael.galera@ftd.com.br>
+ *
+ * Decription:
+ * This package was created to extend the Laravel Framework response system, and elevate him to the standard
+ * described on the {json:api} website.
+ * The answers besides creating a more friendly and readable formatting also contemplate the control of the
+ * Headers according to the last code.
+ *
+ * More information:
+ * https://github.com/ftd-educacao/default-api-response
+ */
+
 namespace Uglymanfirst\LaravelApiResponses;
 
 use Illuminate\Contracts\Routing\ResponseFactory;
